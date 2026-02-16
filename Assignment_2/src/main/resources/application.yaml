@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: Fan-Out-Engine
+
+logging:
+  level:
+    root: INFO
+    com.example.Assignment_2: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+fanout:
+  input:
+    filePath: "./data/input.csv"
+    fileType: "csv"
+    batchSize: 100
+  
+  sinks:
+    rest-api:
+      sinkType: REST_API
+      endpoint: "http://localhost:8080/api/events"
+      rateLimit: 50
+      bufferSize: 500
+      maxRetries: 3
+      enabled: true
+    
+    grpc:
+      sinkType: GRPC
+      endpoint: "localhost:50051"
+      rateLimit: 100
+      bufferSize: 1000
+      maxRetries: 3
+      enabled: true
+    
+    message-queue:
+      sinkType: MESSAGE_QUEUE
+      endpoint: "kafka:9092"
+      rateLimit: 500
+      bufferSize: 2000
+      maxRetries: 3
+      enabled: true
+    
+    wide-column-db:
+      sinkType: WIDE_COLUMN_DB
+      endpoint: "cassandra:9042"
+      rateLimit: 1000
+      bufferSize: 5000
+      maxRetries: 3
+      enabled: true
+  
+  threadPool:
+    corePoolSize: 10
+    maxPoolSize: 50
+    queueCapacity: 1000
+    keepAliveSeconds: 60
+  
+  metricsIntervalSeconds: 5
