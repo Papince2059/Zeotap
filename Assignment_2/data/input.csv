@@ -1,0 +1,21 @@
+id,name,email,age,department,salary
+1,John Smith,john.smith@company.com,32,Engineering,85000
+2,Jane Doe,jane.doe@company.com,28,Sales,65000
+3,Bob Johnson,bob.johnson@company.com,45,Management,95000
+4,Alice Williams,alice.williams@company.com,31,Engineering,88000
+5,Charlie Brown,charlie.brown@company.com,26,HR,55000
+6,Diana Prince,diana.prince@company.com,39,Engineering,92000
+7,Edward Norton,edward.norton@company.com,52,Executive,120000
+8,Fiona Green,fiona.green@company.com,29,Sales,68000
+9,George Miller,george.miller@company.com,35,Engineering,89000
+10,Hannah Lee,hannah.lee@company.com,27,Operations,62000
+11,Isaac Newton,isaac.newton@company.com,41,Research,97000
+12,Julia Roberts,julia.roberts@company.com,33,Marketing,72000
+13,Kevin Hart,kevin.hart@company.com,44,Management,100000
+14,Lisa Simpson,lisa.simpson@company.com,24,Junior Developer,50000
+15,Michael Jordan,michael.jordan@company.com,48,Executive,125000
+16,Nancy Drew,nancy.drew@company.com,30,Engineering,87000
+17,Oscar Wilde,oscar.wilde@company.com,38,Content,70000
+18,Penelope Garcia,penelope.garcia@company.com,35,Engineering,91000
+19,Quinn Rose,quinn.rose@company.com,26,Data Science,80000
+20,Rachel Green,rachel.green@company.com,29,Marketing,69000
